@@ -1,0 +1,21 @@
+.navbar {
+  background-color: #fff;
+  border-bottom: #888;
+  display: flex;
+}
+
+.navbar-logo {
+  width: 3em;
+}
+
+.navbar-links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links-item {
+  margin: 0;
+  list-style-type: none;
+  padding: 1em;
+}
