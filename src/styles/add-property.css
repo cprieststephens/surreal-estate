@@ -41,18 +41,25 @@
 
 #email, #title {
   padding: 0.5rem;
-  width: 12rem;
+  width: 11.2rem;
   position: absolute;
   left: 6.5rem;
   bottom: 0.2rem;
 }
 
 .add-property__button {
-  width: 19.3rem;
+  width: 18rem;
   padding: 0.5rem;
   border: none;
   margin-top: 1rem;
-  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
   border-radius: 0.3rem;
   background-color: #83bcff;
+  color: #17144a
+}
+
+.add-property__button:hover {
+  background-color: #17144a;
+  color: #fff;
 }
