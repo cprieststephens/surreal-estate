@@ -1,3 +1,58 @@
 .add-property {
-  padding: 1em;
+  padding: 1rem;
+  width: 20rem;
+  margin: 1.5rem auto;
+  background-color: #eee;
+  border-radius: 0.3rem;
+}
+
+#form-title {
+  margin-left: 1rem;
+}
+
+.add-property__form-item {
+  padding: 1rem;
+  position: relative;
+}
+
+#bathrooms, #bedrooms {
+  padding: 0.5rem;
+  width: 2rem;
+  position: absolute;
+  left: 6.5rem;
+  bottom: 0.4rem;
+}
+
+#price {
+  padding: 0.5rem;
+  width: 7.8rem;
+  position: absolute;
+  left: 6.5rem;
+  bottom: 0.4rem;
+}
+
+#city, #type {
+  padding: 0.5rem;
+  width: 9rem;
+  position: absolute;
+  left: 6.5rem;
+  bottom: 0.4rem;
+}
+
+#email, #title {
+  padding: 0.5rem;
+  width: 12rem;
+  position: absolute;
+  left: 6.5rem;
+  bottom: 0.2rem;
+}
+
+.add-property__button {
+  width: 19.3rem;
+  padding: 0.5rem;
+  border: none;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: #83bcff;
 }

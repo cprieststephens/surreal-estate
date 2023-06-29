@@ -26,90 +26,108 @@ const AddProperty = () => {
 
   return (
     <div className="add-property">
-      Add Property Page
-      <form onSubmit={handleAddProperty}>
-        <label htmlFor="title">
-          Title
-          <input
-            type="text"
-            placeholder="Family home"
-            id="title"
-            name="title"
-            value={fields.title}
-            onChange={handleFieldChange}
-          />
-        </label>
-        <label htmlFor="type">
-          <select
-            id="type"
-            name="type"
-            value={fields.type}
-            onChange={handleFieldChange}
-          >
-            <option value="Flat">Flat</option>
-            <option value="Detached">Detached</option>
-            <option value="Semi-Detached">Semi-Detached</option>
-            <option value="Terraced">Terraced</option>
-            <option value="End of Terrace">End of Terrace</option>
-            <option value="Cottage">Cottage</option>
-            <option value="Bungalow">Bungalow</option>
-          </select>
-        </label>
-        <label htmlFor="bedrooms">
-          Bedrooms
-          <input
-            type="number"
-            id="bedrooms"
-            name="bedrooms"
-            value={fields.bedrooms}
-            onChange={handleFieldChange}
-          />
-        </label>
-        <label htmlFor="bathrooms">
-          Bathrooms
-          <input
-            type="number"
-            id="bathrooms"
-            name="bathrooms"
-            value={fields.bathrooms}
-            onChange={handleFieldChange}
-          />
-        </label>
-        <label htmlFor="price">
-          Price
-          <input
-            type="number"
-            id="price"
-            name="price"
-            value={fields.price}
-            onChange={handleFieldChange}
-          />
-        </label>
-        <label htmlFor="city">
-          <select
-            id="city"
-            name="city"
-            value={fields.city}
-            onChange={handleFieldChange}
-          >
-            <option value="Manchester">Manchester</option>
-            <option value="Leeds">Leeds</option>
-            <option value="Sheffields">Sheffield</option>
-            <option value="Liverpool">Liverpool</option>
-          </select>
-        </label>
-        <label htmlFor="email">
-          Email
-          <input
-            type="email"
-            placeholder="jane.doe@email.co.uk"
-            id="email"
-            name="email"
-            value={fields.email}
-            onChange={handleFieldChange}
-          />
-        </label>
-        <button type="submit">Add</button>
+      <span id="form-title">Add a Property:</span>
+      <form onSubmit={handleAddProperty} className="add-property__form">
+        <div className="add-property__form-item">
+          <label htmlFor="title">
+            <span>Title: </span>
+            <input
+              type="text"
+              placeholder="Flat available"
+              id="title"
+              name="title"
+              value={fields.title}
+              onChange={handleFieldChange}
+            />
+          </label>
+        </div>
+        <div className="add-property__form-item">
+          <label htmlFor="type">
+            <span>Type: </span>
+            <select
+              id="type"
+              name="type"
+              value={fields.type}
+              onChange={handleFieldChange}
+            >
+              <option value="Flat">Flat</option>
+              <option value="Detached">Detached</option>
+              <option value="Semi-Detached">Semi-Detached</option>
+              <option value="Terraced">Terraced</option>
+              <option value="End of Terrace">End of Terrace</option>
+              <option value="Cottage">Cottage</option>
+              <option value="Bungalow">Bungalow</option>
+            </select>
+          </label>
+        </div>
+        <div className="add-property__form-item">
+          <label htmlFor="bedrooms">
+            <span className="test">Bedrooms: </span>
+            <input
+              type="number"
+              id="bedrooms"
+              name="bedrooms"
+              value={fields.bedrooms}
+              onChange={handleFieldChange}
+            />
+          </label>
+        </div>
+        <div className="add-property__form-item">
+          <label htmlFor="bathrooms">
+            <span>Bathrooms: </span>
+            <input
+              type="number"
+              id="bathrooms"
+              name="bathrooms"
+              value={fields.bathrooms}
+              onChange={handleFieldChange}
+            />
+          </label>
+        </div>
+        <div className="add-property__form-item">
+          <label htmlFor="price">
+            <span>Price: £ </span>
+            <input
+              type="number"
+              id="price"
+              name="price"
+              value={fields.price}
+              onChange={handleFieldChange}
+            />
+          </label>
+        </div>
+        <div className="add-property__form-item">
+          <label htmlFor="city">
+            <span>City: </span>
+            <select
+              id="city"
+              name="city"
+              value={fields.city}
+              onChange={handleFieldChange}
+            >
+              <option value="Manchester">Manchester</option>
+              <option value="Leeds">Leeds</option>
+              <option value="Sheffields">Sheffield</option>
+              <option value="Liverpool">Liverpool</option>
+            </select>
+          </label>
+        </div>
+        <div className="add-property__form-item">
+          <label htmlFor="email">
+            <span>Email: </span>
+            <input
+              type="email"
+              placeholder="jane.doe@email.co.uk"
+              id="email"
+              name="email"
+              value={fields.email}
+              onChange={handleFieldChange}
+            />
+          </label>
+        </div>
+        <button type="submit" className="add-property__button">
+          Add
+        </button>
       </form>
     </div>
   );
