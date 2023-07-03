@@ -1,0 +1,19 @@
+.alert.alert-success {
+  border: 0.1rem solid #00eda1;
+  background-color: #87ffd8;
+  width: 17rem;
+  padding: 0.5rem;
+  margin: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  text-align: center;
+}
+
+.alert.alert-error {
+  border: 0.1rem solid #e70000;
+  background-color: #ff8181;
+  width: 17rem;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  }
