@@ -1,0 +1,46 @@
+.property-card {
+  background-color: #fff;
+  border-radius: 0.3rem;
+  padding-bottom: 0.7rem;
+  width: 100%;
+}
+
+.property-card_logo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.property-card__logo {
+  width: 3rem;
+  padding: 0.2rem;
+}
+
+.property-card__item {
+  padding: 0.3rem 0.7rem;
+}
+
+.property-card__icon {
+  width: 1rem;
+}
+
+.property-card__bold {
+  font-weight: bolder;
+}
+
+.property-card__italic {
+  font-style: italic;
+}
+
+.property-card__email {
+  background-color: #83bcff;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  margin: 0 auto;
+  text-align: center;
+  width: 85%;
+}
+
+.property-card__link {
+  text-decoration: none;
+  color: #000; 
+}
