@@ -1,8 +1,13 @@
+.property-card__container {
+  display: inline-block;
+  width: 25%;
+}
+
 .property-card {
   background-color: #fff;
   border-radius: 0.3rem;
   padding-bottom: 0.7rem;
-  width: 100%;
+  margin: 0.5rem;
 }
 
 .property-card_logo-container {
