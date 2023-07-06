@@ -1,13 +1,9 @@
 .add-property {
   padding: 1rem;
   width: 20rem;
-  margin: 1.5rem auto;
+  margin: 7rem auto;
   background-color: #eee;
   border-radius: 0.3rem;
-}
-
-#form-title {
-  margin-left: 1rem;
 }
 
 .add-property__form-item {

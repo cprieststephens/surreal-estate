@@ -1,0 +1,29 @@
+.sidebar {
+  background-color: #fff;
+  border-radius: 0.3rem;
+  margin: 5.5rem 0.5rem;
+  width: 10rem;
+  height: 85%;
+  position: fixed;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0; 
+}
+
+.sidebar-links-item {
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.sidebar-links-item:link {
+  color: #000000;
+}
+
+.sidebar-links-item:visited {
+  color: #000000;
+}
+

@@ -1,3 +1,12 @@
+.properties {
+  display: flex;
+}
+
+.properties__cards {
+  margin-left: 11rem;
+  margin-top: 5rem;
+}
+
 .alert-container {
-  margin-top: 3rem;
+  margin-top: 9.5rem;
 }

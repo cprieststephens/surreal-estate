@@ -1,9 +1,9 @@
 .property-card__container {
   display: inline-block;
-  width: 25%;
 }
 
 .property-card {
+  width: 10rem;
   background-color: #fff;
   border-radius: 0.3rem;
   padding-bottom: 0.7rem;
