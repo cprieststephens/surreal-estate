@@ -3,8 +3,20 @@
   border-radius: 0.3rem;
   margin: 5.5rem 0.5rem;
   width: 10rem;
-  height: 85%;
+  height: 87.5%;
   position: fixed;
+}
+
+.sidebar-title {
+  display: flex;
+}
+
+.sidebar-icon {
+  margin: 1rem 0.5rem 0 1rem;
+}
+
+.sidebar-text {
+  font-weight: 800;
 }
 
 .sidebar-links {
@@ -15,7 +27,7 @@
 }
 
 .sidebar-links-item {
-  padding: 1rem;
+  padding: 0.5rem 2rem;
   text-decoration: none;
 }
 
