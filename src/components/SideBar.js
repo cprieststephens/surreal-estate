@@ -1,26 +1,58 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { React, useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import qs from "qs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSort, faFilter } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSort,
+  faFilter,
+  faMagnifyingGlass,
+} from "@fortawesome/free-solid-svg-icons";
 import "../styles/sidebar.css";
 
-const buildQueryString = (operation, valueObj) => {
-  const { search } = useLocation();
-  const currentQueryParams = qs.parse(search, { ignoreQueryPrefix: true });
-  const newQueryParams = {
-    ...currentQueryParams,
-    [operation]: JSON.stringify(valueObj),
-  };
-  return qs.stringify(newQueryParams, {
-    addQueryPrefix: true,
-    encode: false,
-  });
-};
-
 const SideBar = () => {
+  const [query, setQuery] = useState("");
+  const { search } = useLocation();
+  const navigate = useNavigate();
+
+  const buildQueryString = (operation, valueObj) => {
+    const currentQueryParams = qs.parse(search, { ignoreQueryPrefix: true });
+    const newQueryParams = {
+      ...currentQueryParams,
+      [operation]: JSON.stringify({
+        ...JSON.parse(currentQueryParams[operation] || "{}"),
+        ...valueObj,
+      }),
+    };
+    return qs.stringify(newQueryParams, {
+      addQueryPrefix: true,
+      encode: false,
+    });
+  };
+
+  const handleSearch = (event) => {
+    event.preventDefault();
+    const newQueryString = buildQueryString("query", {
+      title: { $regex: query },
+    });
+    navigate(newQueryString);
+  };
+
   return (
     <div className="sidebar">
+      <form className="sidebar-form" onSubmit={handleSearch}>
+        <label htmlFor="query">
+          <span className="sidebar-text">Search by title:</span>
+          <input
+            type="text"
+            id="query"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+          />
+        </label>
+        <button className="sidebar-button" type="submit">
+          <FontAwesomeIcon icon={faMagnifyingGlass} />
+        </button>
+      </form>
       <div className="sidebar-title">
         <FontAwesomeIcon className="sidebar-icon" icon={faFilter} />
         <p className="sidebar-text">Filter by city:</p>
