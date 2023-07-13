@@ -11,7 +11,6 @@
   width: 3rem;
   height: 3rem;
   padding: 1rem;
-  margin-right: 1rem;
   align-self: center;
 }
 
@@ -41,4 +40,14 @@
 
 .navbar-links-item:visited {
   color: #000000;
+}
+
+.navbar-button {
+  width: 7rem;
+  height: 4rem;
+  margin: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #83bcff;
+  border: none;
+  border-radius: 0.3rem;
 }

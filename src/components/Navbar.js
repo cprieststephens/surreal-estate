@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/navbar.css";
 import logo from "../img/logo.png";
+import "../styles/navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ onSetUserID }) => {
+  const handleLogin = () => {};
+
+  const handleLogout = () => {};
+
   return (
     <div className="navbar">
       <img className="navbar-logo" src={logo} alt="Surreal Estate logo" />
@@ -16,6 +20,15 @@ const Navbar = () => {
           Add a Property
         </Link>
       </ul>
+      {onSetUserID ? (
+        <button className="navbar-button" type="button" onClick={handleLogout}>
+          Sign Out
+        </button>
+      ) : (
+        <button className="navbar-button" type="button" onClick={handleLogin}>
+          Log in with Facebook
+        </button>
+      )}
     </div>
   );
 };
