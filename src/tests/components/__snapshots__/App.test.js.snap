@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="navbar"
+    >
+      <img
+        alt="Surreal Estate logo"
+        class="navbar-logo"
+        src="logo.png"
+      />
+      <h2
+        class="navbar-title"
+      >
+        Surreal Estate
+      </h2>
+      <ul
+        class="navbar-links"
+      >
+        <a
+          class="navbar-links-item"
+          href="/"
+        >
+          View Properties
+        </a>
+        <a
+          class="navbar-links-item"
+          href="/add-property"
+        >
+          Add a Property
+        </a>
+      </ul>
+      <button
+        class="navbar-button"
+        type="button"
+      >
+        Sign Out
+      </button>
+    </div>
+    <div
+      class="properties"
+    >
+      <div
+        class="sidebar"
+      >
+        <form
+          class="sidebar-form"
+        >
+          <label
+            for="query"
+          >
+            <span
+              class="sidebar-text"
+            >
+              Search by title:
+            </span>
+            <input
+              id="query"
+              type="text"
+              value=""
+            />
+          </label>
+          <button
+            class="sidebar-button"
+            type="submit"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-magnifying-glass "
+              data-icon="magnifying-glass"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        </form>
+        <div
+          class="sidebar-title"
+        >
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-filter sidebar-icon"
+            data-icon="filter"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.9 54.9C10.5 40.9 24.5 32 40 32H472c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L320 320.9V448c0 12.1-6.8 23.2-17.7 28.6s-23.8 4.3-33.5-3l-64-48c-8.1-6-12.8-15.5-12.8-25.6V320.9L9 97.3C-.7 85.4-2.8 68.8 3.9 54.9z"
+              fill="currentColor"
+            />
+          </svg>
+          <p
+            class="sidebar-text"
+          >
+            Filter by city:
+          </p>
+        </div>
+        <ul
+          class="sidebar-links"
+        >
+          <a
+            class="sidebar-links-item"
+            href="/?query={\\"city\\":\\"Manchester\\"}"
+          >
+            Manchester
+          </a>
+          <a
+            class="sidebar-links-item"
+            href="/?query={\\"city\\":\\"Leeds\\"}"
+          >
+            Leeds
+          </a>
+          <a
+            class="sidebar-links-item"
+            href="/?query={\\"city\\":\\"Sheffield\\"}"
+          >
+            Sheffield
+          </a>
+          <a
+            class="sidebar-links-item"
+            href="/?query={\\"city\\":\\"Liverpool\\"}"
+          >
+            Liverpool
+          </a>
+        </ul>
+        <div
+          class="sidebar-title"
+        >
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-sort sidebar-icon"
+            data-icon="sort"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 320 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M137.4 41.4c12.5-12.5 32.8-12.5 45.3 0l128 128c9.2 9.2 11.9 22.9 6.9 34.9s-16.6 19.8-29.6 19.8H32c-12.9 0-24.6-7.8-29.6-19.8s-2.2-25.7 6.9-34.9l128-128zm0 429.3l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128c-12.5 12.5-32.8 12.5-45.3 0z"
+              fill="currentColor"
+            />
+          </svg>
+          <p
+            class="sidebar-text"
+          >
+            Sort by price:
+          </p>
+        </div>
+        <ul
+          class="sidebar-links"
+        >
+          <a
+            class="sidebar-links-item"
+            href="/?sort={\\"price\\":1}"
+          >
+            Ascending
+          </a>
+          <a
+            class="sidebar-links-item"
+            href="/?sort={\\"price\\":-1}"
+          >
+            Descending
+          </a>
+        </ul>
+      </div>
+      <div
+        class="properties__cards"
+      />
+      <div
+        class="alert-container"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

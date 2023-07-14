@@ -1,9 +1,15 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
 import App from "../../components/App";
 
-xit("renders learn react link", () => {
-  render(<App />);
-  const linkElement = screen.getByText(/Surreal Estate/i);
-  expect(linkElement).toBeInTheDocument();
+describe("App", () => {
+  it("renders correctly", () => {
+    const { asFragment } = render(
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
 });
