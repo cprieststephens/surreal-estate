@@ -3,8 +3,8 @@
 }
 
 .property-card {
-  width: 13rem;
-  height: 14rem;
+  width: 15.5rem;
+  min-height: 14.5rem;
   background-color: #fff;
   padding-bottom: 0.7rem;
   margin: 0.25rem 0 0 0.25rem;
@@ -20,8 +20,13 @@
   padding: 0.2rem;
 }
 
-.property-card__item {
-  padding: 0.3rem 0.7rem;
+.property-card__text-field {
+  height: 1.7rem;
+  margin-left: 1rem;
+}
+
+.property-card__icon-field {
+  padding: 0.3rem 1rem;
 }
 
 .property-card__icon {

@@ -5,7 +5,6 @@ import "../styles/navbar.css";
 
 const Navbar = ({ onSetUserID }) => {
   const handleLogin = () => {};
-
   const handleLogout = () => {};
 
   return (

@@ -28,22 +28,22 @@ const propertyCard = ({
             alt="Surreal Estate logo"
           />
         </div>
-        <div className="property-card__item">
+        <div className="property-card__text-field">
           <span className="property-card__bold">{title}</span>
         </div>
-        <div className="property-card__item">
+        <div className="property-card__text-field">
           <span className="property-card__italic">{type} - </span>
           <span className="property-card__italic">{city}</span>
         </div>
-        <div className="property-card__item">
+        <div className="property-card__icon-field">
           <FontAwesomeIcon className="property-card__icon" icon={faBath} />
           <span> {bathrooms}</span>
         </div>
-        <div className="property-card__item">
+        <div className="property-card__icon-field">
           <FontAwesomeIcon className="property-card__icon" icon={faBed} />
           <span> {bedrooms}</span>
         </div>
-        <div className="property-card__item">
+        <div className="property-card__icon-field">
           <FontAwesomeIcon icon={faSterlingSign} />
           <span> {price}</span>
         </div>
