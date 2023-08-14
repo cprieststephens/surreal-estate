@@ -11,21 +11,24 @@ const Navbar = ({ onSetUserID }) => {
     <div className="navbar">
       <img className="navbar-logo" src={logo} alt="Surreal Estate logo" />
       <h2 className="navbar-title">Surreal Estate</h2>
-      <ul className="navbar-links">
+      <div className="navbar-links">
         <Link className="navbar-links-item" to="/">
           View Properties
         </Link>
         <Link className="navbar-links-item" to="add-property">
           Add a Property
         </Link>
-      </ul>
+        <Link className="navbar-links-item" to="sign-up">
+          Sign Up
+        </Link>
+      </div>
       {onSetUserID ? (
         <button className="navbar-button" type="button" onClick={handleLogout}>
           Sign Out
         </button>
       ) : (
         <button className="navbar-button" type="button" onClick={handleLogin}>
-          Log in with Facebook
+          Sign In
         </button>
       )}
     </div>
