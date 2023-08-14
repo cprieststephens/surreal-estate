@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/sign-up.css";
 
-const Register = () => {
+const SignUp = () => {
   return (
     <div className="sign-up">
       <form>
@@ -17,4 +17,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default SignUp;

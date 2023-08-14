@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../img/logo.png";
 import "../styles/navbar.css";
 
-const Navbar = ({ onSetUserID }) => {
-  const handleLogin = () => {};
+const Navbar = ({ userID }) => {
   const handleLogout = () => {};
 
   return (
@@ -22,14 +21,14 @@ const Navbar = ({ onSetUserID }) => {
           Sign Up
         </Link>
       </div>
-      {onSetUserID ? (
+      {userID ? (
         <button className="navbar-button" type="button" onClick={handleLogout}>
           Sign Out
         </button>
       ) : (
-        <button className="navbar-button" type="button" onClick={handleLogin}>
+        <Link className="navbar-links-item" to="sign-in">
           Sign In
-        </button>
+        </Link>
       )}
     </div>
   );
