@@ -1,10 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { signOut } from "firebase/auth";
+import { auth } from "../config/firebase";
 import logo from "../img/logo.png";
 import "../styles/navbar.css";
 
-const Navbar = ({ userID }) => {
-  const handleLogout = () => {};
+const Navbar = () => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    signOut(auth)
+      .then(() => {
+        navigate("sign-in");
+        console.log("Signed out successfully");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   return (
     <div className="navbar">
@@ -20,16 +33,13 @@ const Navbar = ({ userID }) => {
         <Link className="navbar-links-item" to="sign-up">
           Sign Up
         </Link>
-      </div>
-      {userID ? (
-        <button className="navbar-button" type="button" onClick={handleLogout}>
-          Sign Out
-        </button>
-      ) : (
         <Link className="navbar-links-item" to="sign-in">
           Sign In
         </Link>
-      )}
+        <button className="navbar-button" type="button" onClick={handleLogout}>
+          Sign Out
+        </button>
+      </div>
     </div>
   );
 };
