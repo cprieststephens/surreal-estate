@@ -32,31 +32,38 @@ const SignIn = ({ setUserID }) => {
 
   return (
     <div className="sign-in">
-      <form>
-        <label htmlFor="sign-in__email">
-          Email:
-          <input
-            type="email"
-            id="sign-in__email"
-            required
-            onChange={handleEmail}
-          />
-        </label>
-        <label htmlFor="sign-in__password">
-          Password:
-          <input
-            type="password"
-            id="sign-in__password"
-            required
-            onChange={handlePasssword}
-          />
-        </label>
-        <button type="button" onClick={onLogin}>
+      <form className="sign-in__form">
+        <div className="sign-in__item">
+          <label htmlFor="sign-in__email">
+            Email:
+            <input
+              type="email"
+              id="sign-in__email"
+              required
+              onChange={handleEmail}
+            />
+          </label>
+        </div>
+        <div className="sign-in__item">
+          <label htmlFor="sign-in__password">
+            Password:
+            <input
+              type="password"
+              id="sign-in__password"
+              required
+              onChange={handlePasssword}
+            />
+          </label>
+        </div>
+        <button className="sign-in__button" type="button" onClick={onLogin}>
           Sign In
         </button>
-        <p>
+        <p className="sign-in__text">
           Need to create an account?
-          <NavLink to="/sign-up">Sign Up</NavLink>
+          <span> </span>
+          <NavLink className="sign-in__link" to="/sign-up">
+            Sign Up
+          </NavLink>
         </p>
       </form>
     </div>

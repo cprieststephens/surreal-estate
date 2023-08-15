@@ -1,3 +1,52 @@
-.sign-in {
-    padding-top: 7rem;
-  }
+.sign-in__form {
+  background-color: #fff;
+  width: 11rem;
+  margin: 7rem auto;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.sign-in__item {
+  padding: 0.5rem;
+}
+
+#sign-in__password, #sign-in__email {
+  width: 9rem;
+  padding: 0.4rem;
+}
+
+.sign-in__button {
+  width: 10rem;
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+  background-color: #83bcff;
+  color: #17144a;
+  border: none;
+  border-radius: 0.3rem;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+}
+
+.sign-in__button:hover {
+  background-color: #17144a;
+  color: #fff;
+  cursor: pointer
+}
+
+.sign-in__text {
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.sign-in__link {
+  text-decoration: none;
+  cursor: pointer
+}
+
+.sign-in__link:link {
+  color: #000000;
+}
+
+.sign-in__link:visited {
+  color: #000000;
+}
