@@ -12,7 +12,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Navbar userID={userID} />
+      <Navbar userID={userID} setUserID={setUserID} />
       <Routes>
         <Route path="/" element={<Properties />} />
         <Route path="add-property" element={<AddProperty />} />;

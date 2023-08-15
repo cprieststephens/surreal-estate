@@ -19,8 +19,8 @@ const SignUp = () => {
     event.preventDefault();
     await createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        const userID = userCredential.user;
-        console.log(userID);
+        const { user } = userCredential;
+        console.log(user);
         navigate("/sign-in");
       })
       .catch((error) => {

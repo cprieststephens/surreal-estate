@@ -4,7 +4,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../config/firebase";
 import "../styles/sign-in.css";
 
-const SignIn = () => {
+const SignIn = ({ setUserID }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -19,9 +19,9 @@ const SignIn = () => {
     event.preventDefault();
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        const userID = userCredential.user;
+        const { user } = userCredential;
         navigate("/");
-        console.log(userID);
+        setUserID(user);
       })
       .catch((error) => {
         const errorCode = error.code;

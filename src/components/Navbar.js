@@ -5,12 +5,13 @@ import { auth } from "../config/firebase";
 import logo from "../img/logo.png";
 import "../styles/navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ setUserID, userID }) => {
   const navigate = useNavigate();
 
   const handleLogout = () => {
     signOut(auth)
       .then(() => {
+        setUserID(null);
         navigate("sign-in");
         console.log("Signed out successfully");
       })
@@ -23,23 +24,35 @@ const Navbar = () => {
     <div className="navbar">
       <img className="navbar-logo" src={logo} alt="Surreal Estate logo" />
       <h2 className="navbar-title">Surreal Estate</h2>
-      <div className="navbar-links">
-        <Link className="navbar-links-item" to="/">
-          View Properties
-        </Link>
-        <Link className="navbar-links-item" to="add-property">
-          Add a Property
-        </Link>
-        <Link className="navbar-links-item" to="sign-up">
-          Sign Up
-        </Link>
-        <Link className="navbar-links-item" to="sign-in">
-          Sign In
-        </Link>
-        <button className="navbar-button" type="button" onClick={handleLogout}>
-          Sign Out
-        </button>
-      </div>
+      {!userID ? (
+        <div className="navbar-links">
+          <Link className="navbar-links-item" to="/">
+            View Properties
+          </Link>
+          <Link className="navbar-links-item" to="sign-up">
+            Sign Up
+          </Link>
+          <Link className="navbar-links-item" to="sign-in">
+            Sign In
+          </Link>
+        </div>
+      ) : (
+        <div className="navbar-links">
+          <Link className="navbar-links-item" to="/">
+            View Properties
+          </Link>
+          <Link className="navbar-links-item" to="add-property">
+            Add a Property
+          </Link>
+          <button
+            className="navbar-button"
+            type="button"
+            onClick={handleLogout}
+          >
+            Sign Out
+          </button>
+        </div>
+      )}
     </div>
   );
 };
