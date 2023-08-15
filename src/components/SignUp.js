@@ -32,33 +32,40 @@ const SignUp = () => {
 
   return (
     <div className="sign-up">
-      <form>
-        <label htmlFor="sign-up__email">
-          Email:
-          <input
-            type="email"
-            id="sign-up__email"
-            value={email}
-            onChange={handleEmail}
-            required
-          />
-        </label>
-        <label htmlFor="sign-up__password">
-          Password:
-          <input
-            type="password"
-            id="sign-up__password"
-            value={password}
-            onChange={handlePassword}
-            required
-          />
-        </label>
-        <button type="submit" onClick={onSubmit}>
+      <form className="sign-up__form">
+        <div className="sign-up__item">
+          <label htmlFor="sign-up__email">
+            Email:
+            <input
+              type="email"
+              id="sign-up__email"
+              value={email}
+              onChange={handleEmail}
+              required
+            />
+          </label>
+        </div>
+        <div className="sign-up__item">
+          <label htmlFor="sign-up__password">
+            Password:
+            <input
+              type="password"
+              id="sign-up__password"
+              value={password}
+              onChange={handlePassword}
+              required
+            />
+          </label>
+        </div>
+        <button className="sign-up__button" type="submit" onClick={onSubmit}>
           Sign Up
         </button>
-        <p>
+        <p className="sign-up__text">
           Already have an account?
-          <NavLink to="/sign-in">Sign In</NavLink>
+          <span> </span>
+          <NavLink className="sign-up__link" to="/sign-in">
+            Sign In
+          </NavLink>
         </p>
       </form>
     </div>
