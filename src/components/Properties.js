@@ -8,7 +8,6 @@ import "../styles/properties.css";
 
 const Properties = () => {
   const [properties, setProperties] = useState([]);
-
   const [alert, setAlert] = useState({ message: "" });
 
   useEffect(() => {
@@ -27,7 +26,7 @@ const Properties = () => {
     axios
       .get(`http://localhost:3000/api/v1/PropertyListing${search}`)
       .then(({ data }) => setProperties(data))
-      .catch((err) => console.error(err));
+      .catch((error) => console.error(error));
   }, [search]);
 
   return (
@@ -38,7 +37,7 @@ const Properties = () => {
           <PropertyCard key={property._id} {...property} />
         ))}
       </div>
-      <div className="alert-container">
+      <div className="properties__alert">
         <Alert message={alert.message} />
       </div>
     </div>
