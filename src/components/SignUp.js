@@ -2,11 +2,13 @@ import { React, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../config/firebase";
+import Alert from "./Alert";
 import "../styles/sign-up.css";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [alert, setAlert] = useState({ message: "" });
   const navigate = useNavigate();
   const handleEmail = (event) => {
     setEmail(event.target.value);
@@ -21,8 +23,10 @@ const SignUp = () => {
       .then(() => {
         navigate("/sign-in");
       })
-      .catch((error) => {
-        console.error(error);
+      .catch(() => {
+        setAlert({
+          message: "Sign up unsuccessful. Please try again.",
+        });
       });
   };
 
@@ -64,6 +68,9 @@ const SignUp = () => {
           </NavLink>
         </p>
       </form>
+      <div className="sign-up__alert">
+        <Alert message={alert.message} />
+      </div>
     </div>
   );
 };

@@ -1,11 +1,13 @@
-import React from "react";
+import { React, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { auth } from "../config/firebase";
 import logo from "../img/logo.png";
+import Alert from "./Alert";
 import "../styles/navbar.css";
 
 const Navbar = ({ setUserID, userID }) => {
+  const [alert, setAlert] = useState({ message: "" });
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -14,8 +16,10 @@ const Navbar = ({ setUserID, userID }) => {
         setUserID(null);
         navigate("sign-in");
       })
-      .catch((error) => {
-        console.error(error);
+      .catch(() => {
+        setAlert({
+          message: "Sign out unsuccessful. Please try again.",
+        });
       });
   };
 
@@ -52,6 +56,9 @@ const Navbar = ({ setUserID, userID }) => {
           </button>
         </div>
       )}
+      <div className="navbar__alert">
+        <Alert message={alert.message} />
+      </div>
     </div>
   );
 };
