@@ -13,10 +13,9 @@ const Navbar = ({ setUserID, userID }) => {
       .then(() => {
         setUserID(null);
         navigate("sign-in");
-        console.log("Signed out successfully");
       })
       .catch((error) => {
-        console.log(error);
+        console.error(error);
       });
   };
 

@@ -18,15 +18,11 @@ const SignUp = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
     await createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        const { user } = userCredential;
-        console.log(user);
+      .then(() => {
         navigate("/sign-in");
       })
       .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorCode, errorMessage);
+        console.error(error);
       });
   };
 
