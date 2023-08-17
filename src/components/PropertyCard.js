@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBath,
   faBed,
-  faSterlingSign,
   faEnvelope,
+  faStar,
+  faSterlingSign,
 } from "@fortawesome/free-solid-svg-icons";
 import "../styles/property-card.css";
 import logo from "../img/logo.png";
@@ -14,9 +15,12 @@ const propertyCard = ({
   bedrooms,
   city,
   email,
+  _id,
+  onSaveProperty,
   price,
   title,
   type,
+  userID,
 }) => {
   return (
     <div className="property-card__container">
@@ -53,6 +57,16 @@ const propertyCard = ({
             <span> Email</span>
           </a>
         </div>
+        {userID && (
+          <button
+            className="property-card__save"
+            type="button"
+            onClick={() => onSaveProperty(_id)}
+          >
+            <FontAwesomeIcon icon={faStar} />
+            <span> Save</span>
+          </button>
+        )}
       </div>
     </div>
   );
