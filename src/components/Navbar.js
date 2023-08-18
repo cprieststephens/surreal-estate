@@ -47,6 +47,9 @@ const Navbar = ({ setUserID, userID }) => {
           <Link className="navbar-links-item" to="add-property">
             Add a Property
           </Link>
+          <Link className="navbar-links-item" to="saved-properties">
+            Saved Properties
+          </Link>
           <button
             className="navbar-button"
             type="button"

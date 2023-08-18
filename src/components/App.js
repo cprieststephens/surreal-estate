@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 import Properties from "./Properties";
 import AddProperty from "./AddProperty";
+import SavedProperties from "./SavedProperties";
 import SignUp from "./SignUp";
 import SignIn from "./SignIn";
 import "../styles/app.css";
@@ -15,9 +16,10 @@ const App = () => {
       <Navbar userID={userID} setUserID={setUserID} />
       <Routes>
         <Route path="/" element={<Properties userID={userID} />} />
-        <Route path="add-property" element={<AddProperty />} />;
-        <Route path="sign-up" element={<SignUp />} />;
-        <Route path="sign-in" element={<SignIn setUserID={setUserID} />} />;
+        <Route path="add-property" element={<AddProperty />} />
+        <Route path="saved-properties" element={<SavedProperties />} />
+        <Route path="sign-up" element={<SignUp />} />
+        <Route path="sign-in" element={<SignIn setUserID={setUserID} />} />
       </Routes>
     </div>
   );
