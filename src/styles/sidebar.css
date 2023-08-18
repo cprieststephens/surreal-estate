@@ -14,6 +14,7 @@
 #query {
   margin: 1rem 0 1rem 0;
   padding: 0.4rem;
+  font-family: 'Rubik', sans-serif;
 }
 
 .sidebar-button {
@@ -22,6 +23,12 @@
   background-color: #83bcff;
   border-radius: 0.3rem;
   border: none;
+}
+
+.sidebar-button:hover {
+  background-color: #67ffda;
+  border: 1px solid #17144a;
+  cursor: pointer;
 }
 
 .sidebar-title {

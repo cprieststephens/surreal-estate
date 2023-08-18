@@ -6,7 +6,6 @@ import AddProperty from "./AddProperty";
 import SavedProperties from "./SavedProperties";
 import SignUp from "./SignUp";
 import SignIn from "./SignIn";
-import "../styles/app.css";
 
 const App = () => {
   const [userID, setUserID] = useState("");

@@ -66,3 +66,9 @@
   font-size: 1rem;
   font-family: 'Rubik', sans-serif;
 }
+
+.property-card__email:hover, .property-card__save:hover {
+  background-color: #67ffda;
+  border: 1px solid #17144a;
+  cursor: pointer;
+} 

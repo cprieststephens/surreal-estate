@@ -1,5 +1,7 @@
 .properties {
   display: flex;
+  background-color: #ddd;
+  height: 100vh;
 }
 
 .properties__cards {

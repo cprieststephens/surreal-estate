@@ -1,3 +1,8 @@
+.saved-properties {
+  background-color: #ddd;
+  height: 100vh;
+}
+
 .saved-properties__cards {
   margin-top: 5rem;
 }

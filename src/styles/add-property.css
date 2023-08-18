@@ -2,7 +2,7 @@
   padding: 1rem;
   width: 20rem;
   margin: 7rem auto;
-  background-color: #fff;
+  border: 1px solid #17144a;
   border-radius: 0.3rem;
 }
 
@@ -17,6 +17,7 @@
   position: absolute;
   left: 6.5rem;
   bottom: 0.4rem;
+  font-family: 'Rubik', sans-serif;
 }
 
 #price {
@@ -25,6 +26,7 @@
   position: absolute;
   left: 6.5rem;
   bottom: 0.4rem;
+  font-family: 'Rubik', sans-serif;
 }
 
 #city, #type {
@@ -33,6 +35,7 @@
   position: absolute;
   left: 6.5rem;
   bottom: 0.4rem;
+  font-family: 'Rubik', sans-serif;
 }
 
 #email, #title {
@@ -41,6 +44,7 @@
   position: absolute;
   left: 6.5rem;
   bottom: 0.4rem;
+  font-family: 'Rubik', sans-serif;
 }
 
 .add-property__button {
@@ -50,10 +54,12 @@
   margin: 0.5rem 1rem;
   border-radius: 0.3rem;
   background-color: #83bcff;
-  color: #17144a
+  color: #17144a;
+  font-family: 'Rubik', sans-serif;
 }
 
 .add-property__button:hover {
-  background-color: #17144a;
-  color: #fff;
+  background-color: #67ffda;
+  border: 1px solid #17144a;
+  cursor: pointer;
 }

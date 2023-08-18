@@ -61,3 +61,9 @@
   font-size: 1rem;
   font-family: 'Rubik', sans-serif;
 }
+
+.saved-card__email:hover, .saved-card__remove:hover {
+  background-color: #67ffda;
+  border: 1px solid #17144a;
+  cursor: pointer;
+}

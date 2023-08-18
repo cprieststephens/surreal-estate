@@ -1,6 +1,6 @@
 .navbar {
   background-color: #fff;
-  border-bottom: #888;
+  border-bottom: 4px solid #ddd;
   display: flex;
   position: fixed;
   top: 0;
@@ -50,6 +50,13 @@
   background-color: #83bcff;
   border: none;
   border-radius: 0.3rem;
+  font-family: 'Rubik', sans-serif;
+}
+
+.navbar-button:hover {
+  background-color: #67ffda;
+  border: 1px solid #17144a;
+  cursor: pointer;
 }
 
 .navbar__alert {

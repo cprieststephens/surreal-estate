@@ -1,8 +1,8 @@
 .sign-up__form {
-  background-color: #fff;
   width: 11rem;
   margin: 7rem auto;
   padding: 1rem;
+  border: 1px solid #17144a;
   border-radius: 0.3rem;
 }
 
@@ -28,9 +28,9 @@
 }
 
 .sign-up__button:hover {
-  background-color: #17144a;
-  color: #fff;
-  cursor: pointer
+  background-color: #67ffda;
+  border: 1px solid #17144a;
+  cursor: pointer;
 }
 
 .sign-up__text {
