@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import qs from "qs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -43,7 +43,8 @@ const SideBar = () => {
         <label htmlFor="query">
           <span className="sidebar-text">Search by title:</span>
           <input
-            type="text"
+            type="search"
+            placeholder="flat"
             id="query"
             value={query}
             onChange={(event) => setQuery(event.target.value)}

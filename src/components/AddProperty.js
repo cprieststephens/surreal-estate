@@ -21,7 +21,6 @@ const AddProperty = () => {
   };
 
   const [fields, setFields] = useState(initialState.fields);
-
   const [alert, setAlert] = useState(initialState.alert);
 
   const handleFieldChange = (event) => {

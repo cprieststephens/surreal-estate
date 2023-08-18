@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../config/firebase";
@@ -10,9 +10,11 @@ const SignIn = ({ setUserID }) => {
   const [password, setPassword] = useState("");
   const [alert, setAlert] = useState({ message: "" });
   const navigate = useNavigate();
+
   const handleEmail = (event) => {
     setEmail(event.target.value);
   };
+
   const handlePasssword = (event) => {
     setPassword(event.target.value);
   };
