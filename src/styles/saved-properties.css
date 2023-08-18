@@ -1,3 +1,10 @@
-.saved-properties {
-  margin-top: 10rem;
+.saved-properties__cards {
+  margin-top: 5rem;
 }
+
+.saved-properties__alert {
+  margin: 9rem auto;
+}
+
+
+

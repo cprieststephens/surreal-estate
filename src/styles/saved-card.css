@@ -1,8 +1,8 @@
-.property-card__container {
+.saved-card__container {
   display: inline-block;
 }
 
-.property-card {
+.saved-card {
   width: 15.5rem;
   min-height: 14.5rem;
   background-color: #fff;
@@ -10,38 +10,33 @@
   margin: 0.25rem 0 0 0.25rem;
 }
 
-.property-card__logo-container {
-  display: flex;
-  justify-content: center;
-}
-
-.property-card__logo {
-  width: 3rem;
-  padding: 0.2rem;
-}
-
-.property-card__text-field {
+.saved-card__star {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+  
+.saved-card__text-field {
   height: 1.7rem;
   margin-left: 1rem;
 }
-
-.property-card__icon-field {
+  
+.saved-card__icon-field {
   padding: 0.3rem 1rem;
 }
-
-.property-card__icon {
+  
+.saved-card__icon {
   width: 1rem;
 }
-
-.property-card__bold {
+  
+.saved-card__bold {
   font-weight: bolder;
 }
-
-.property-card__italic {
+  
+.saved-card__italic {
   font-style: italic;
 }
 
-.property-card__email {
+.saved-card__email {
   background-color: #83bcff;
   border-radius: 0.3rem;
   padding: 0.3rem;
@@ -49,13 +44,13 @@
   text-align: center;
   width: 85%;
 }
-
-.property-card__link {
+  
+.saved-card__link {
   text-decoration: none;
   color: #000; 
 }
-
-.property-card__save {
+  
+.saved-card__remove {
   background-color: #83bcff;
   border: none;
   border-radius: 0.3rem;

@@ -8,6 +8,7 @@ import {
   faStar,
   faSterlingSign,
 } from "@fortawesome/free-solid-svg-icons";
+import "../styles/saved-card.css";
 
 const SavedCard = ({ _id, propertyListing }) => {
   const { bathrooms, bedrooms, city, email, price, title, type } =
@@ -21,7 +22,7 @@ const SavedCard = ({ _id, propertyListing }) => {
   return (
     <div className="saved-card__container">
       <div className="saved-card">
-        <FontAwesomeIcon icon={faStar} />
+        <FontAwesomeIcon icon={faStar} className="saved-card__star" />
         <div className="saved-card__text-field">
           <span className="saved-card__bold">{title}</span>
         </div>

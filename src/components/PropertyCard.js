@@ -25,7 +25,7 @@ const propertyCard = ({
   return (
     <div className="property-card__container">
       <div className="property-card">
-        <div className="property-card_logo-container">
+        <div className="property-card__logo-container">
           <img
             className="property-card__logo"
             src={logo}
