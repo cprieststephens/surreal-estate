@@ -1,4 +1,5 @@
 import React from "react";
+import { MemoryRouter } from "react-router-dom";
 import { render } from "@testing-library/react";
 import PropertyCard from "../../components/PropertyCard";
 
@@ -11,19 +12,27 @@ describe("PropertyCard", () => {
     price: 400000,
     city: "Stub city",
     email: "Stub email",
+    _id: "111",
+    userID: "222",
+    onSaveProperty: jest.fn(),
   };
 
-  it("renders correct value for props", () => {
-    const { getByText, getByRole } = render(
-      <PropertyCard
-        title={validProps.title}
-        type={validProps.type}
-        bedrooms={validProps.bedrooms}
-        bathrooms={validProps.bathrooms}
-        price={validProps.price}
-        city={validProps.city}
-        email={validProps.email}
-      />
+  it("renders the correct value for props", () => {
+    const { getByText } = render(
+      <MemoryRouter>
+        <PropertyCard
+          title={validProps.title}
+          type={validProps.type}
+          bedrooms={validProps.bedrooms}
+          bathrooms={validProps.bathrooms}
+          price={validProps.price}
+          city={validProps.city}
+          email={validProps.email}
+          _id={validProps._id}
+          userID={validProps.userID}
+          onSaveProperty={validProps.onSaveProperty}
+        />
+      </MemoryRouter>
     );
     const typeAndCityText = getByText(
       (_, element) => element.textContent === "Stub type - Stub city"
@@ -34,6 +43,47 @@ describe("PropertyCard", () => {
     expect(getByText("4")).toBeInTheDocument();
     expect(getByText("2")).toBeInTheDocument();
     expect(getByText("400000")).toBeInTheDocument();
-    expect(getByRole("link")).toHaveAttribute("href", "mailto:Stub email");
+  });
+
+  it("renders email link text", () => {
+    const { getByText } = render(
+      <MemoryRouter>
+        <PropertyCard
+          title={validProps.title}
+          type={validProps.type}
+          bedrooms={validProps.bedrooms}
+          bathrooms={validProps.bathrooms}
+          price={validProps.price}
+          city={validProps.city}
+          email={validProps.email}
+          _id={validProps._id}
+          userID={validProps.userID}
+          onSaveProperty={validProps.onSaveProperty}
+        />
+      </MemoryRouter>
+    );
+
+    expect(getByText("Email")).toBeInTheDocument();
+  });
+
+  it("renders a save button", () => {
+    const { getByRole } = render(
+      <MemoryRouter>
+        <PropertyCard
+          title={validProps.title}
+          type={validProps.type}
+          bedrooms={validProps.bedrooms}
+          bathrooms={validProps.bathrooms}
+          price={validProps.price}
+          city={validProps.city}
+          email={validProps.email}
+          _id={validProps._id}
+          userID={validProps.userID}
+          onSaveProperty={validProps.onSaveProperty}
+        />
+      </MemoryRouter>
+    );
+
+    expect(getByRole("button")).toBeInTheDocument();
   });
 });

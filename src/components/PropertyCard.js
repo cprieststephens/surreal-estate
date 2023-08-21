@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBath,
@@ -52,10 +53,10 @@ const propertyCard = ({
           <span> {price}</span>
         </div>
         <div className="property-card__email">
-          <a className="property-card__link" href={`mailto:${email}`}>
+          <Link className="property-card__link" to={`mailto:${email}`}>
             <FontAwesomeIcon icon={faEnvelope} />
             <span> Email</span>
-          </a>
+          </Link>
         </div>
         {userID && (
           <button

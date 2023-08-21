@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -43,10 +44,10 @@ const SavedCard = ({ _id, propertyListing }) => {
           <span> {price}</span>
         </div>
         <div className="saved-card__email">
-          <a className="saved-card__link" href={`mailto:${email}`}>
+          <Link className="property-card__link" to={`mailto:${email}`}>
             <FontAwesomeIcon icon={faEnvelope} />
             <span> Email</span>
-          </a>
+          </Link>
         </div>
         <button
           className="saved-card__remove"

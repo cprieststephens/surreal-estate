@@ -18,7 +18,7 @@ exports[`App renders correctly 1`] = `
       >
         Surreal Estate
       </h2>
-      <ul
+      <div
         class="navbar-links"
       >
         <a
@@ -29,17 +29,20 @@ exports[`App renders correctly 1`] = `
         </a>
         <a
           class="navbar-links-item"
-          href="/add-property"
+          href="/sign-up"
         >
-          Add a Property
+          Sign Up
         </a>
-      </ul>
-      <button
-        class="navbar-button"
-        type="button"
-      >
-        Sign Out
-      </button>
+        <a
+          class="navbar-links-item"
+          href="/sign-in"
+        >
+          Sign In
+        </a>
+      </div>
+      <div
+        class="navbar__alert"
+      />
     </div>
     <div
       class="properties"
@@ -60,7 +63,8 @@ exports[`App renders correctly 1`] = `
             </span>
             <input
               id="query"
-              type="text"
+              placeholder="flat"
+              type="search"
               value=""
             />
           </label>
@@ -182,7 +186,7 @@ exports[`App renders correctly 1`] = `
         class="properties__cards"
       />
       <div
-        class="alert-container"
+        class="properties__alert"
       />
     </div>
   </div>
