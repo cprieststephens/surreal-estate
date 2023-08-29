@@ -11,7 +11,7 @@
   display: flex;
 }
 
-#query {
+.sidebar-search {
   width: 9rem;
   margin: 1rem 0 1rem 0;
   padding: 0.4rem;

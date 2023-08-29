@@ -41,6 +41,7 @@ const SignIn = ({ setUserID }) => {
           <label htmlFor="sign-in__email">
             Email:
             <input
+              className="sign-in__input"
               type="email"
               id="sign-in__email"
               required
@@ -52,6 +53,7 @@ const SignIn = ({ setUserID }) => {
           <label htmlFor="sign-in__password">
             Password:
             <input
+              className="sign-in__input"
               type="password"
               id="sign-in__password"
               required

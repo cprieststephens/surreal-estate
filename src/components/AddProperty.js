@@ -41,6 +41,7 @@ const AddProperty = () => {
           <label htmlFor="title">
             <span>Title: </span>
             <input
+              className="add-property__free-text"
               type="text"
               placeholder="Flat available"
               id="title"
@@ -54,6 +55,7 @@ const AddProperty = () => {
           <label htmlFor="type">
             <span>Type: </span>
             <select
+              className="add-property__dropdown"
               id="type"
               name="type"
               value={fields.type}
@@ -71,8 +73,9 @@ const AddProperty = () => {
         </div>
         <div className="add-property__form-item">
           <label htmlFor="bedrooms">
-            <span className="test">Bedrooms: </span>
+            <span>Bedrooms: </span>
             <input
+              className="add-property__number"
               type="number"
               id="bedrooms"
               name="bedrooms"
@@ -85,6 +88,7 @@ const AddProperty = () => {
           <label htmlFor="bathrooms">
             <span>Bathrooms: </span>
             <input
+              className="add-property__number"
               type="number"
               id="bathrooms"
               name="bathrooms"
@@ -97,6 +101,7 @@ const AddProperty = () => {
           <label htmlFor="price">
             <span>Price: £ </span>
             <input
+              className="add-property__price"
               type="number"
               id="price"
               name="price"
@@ -109,6 +114,7 @@ const AddProperty = () => {
           <label htmlFor="city">
             <span>City: </span>
             <select
+              className="add-property__dropdown"
               id="city"
               name="city"
               value={fields.city}
@@ -125,6 +131,7 @@ const AddProperty = () => {
           <label htmlFor="email">
             <span>Email: </span>
             <input
+              className="add-property__free-text"
               type="email"
               placeholder="jane.doe@email.co.uk"
               id="email"

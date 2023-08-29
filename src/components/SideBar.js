@@ -43,6 +43,7 @@ const SideBar = () => {
         <label htmlFor="query">
           <span className="sidebar-text">Search by title:</span>
           <input
+            className="sidebar-search"
             type="search"
             placeholder="flat"
             id="query"

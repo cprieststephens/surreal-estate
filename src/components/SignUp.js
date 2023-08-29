@@ -39,6 +39,7 @@ const SignUp = () => {
           <label htmlFor="sign-up__email">
             Email:
             <input
+              className="sign-up__input"
               type="email"
               id="sign-up__email"
               value={email}
@@ -51,6 +52,7 @@ const SignUp = () => {
           <label htmlFor="sign-up__password">
             Password:
             <input
+              className="sign-up__input"
               type="password"
               id="sign-up__password"
               value={password}

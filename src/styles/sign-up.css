@@ -10,7 +10,7 @@
   padding: 0.5rem;
 }
 
-#sign-up__password, #sign-up__email {
+.sign-up__input {
   width: 9rem;
   padding: 0.4rem;
 }
