@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar";
+import BurgerNav from "./BurgerNav";
 import Properties from "./Properties";
 import AddProperty from "./AddProperty";
 import SavedProperties from "./SavedProperties";
@@ -13,6 +14,7 @@ const App = () => {
   return (
     <div className="App">
       <Navbar userID={userID} setUserID={setUserID} />
+      <BurgerNav className="burger-nav" />
       <Routes>
         <Route path="/" element={<Properties userID={userID} />} />
         <Route path="add-property" element={<AddProperty />} />
