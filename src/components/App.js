@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div className="App">
       <Navbar userID={userID} setUserID={setUserID} />
-      <BurgerNav className="burger-nav" />
+      <BurgerNav userID={userID} setUserID={setUserID} />
       <Routes>
         <Route path="/" element={<Properties userID={userID} />} />
         <Route path="add-property" element={<AddProperty />} />
