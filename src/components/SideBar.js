@@ -2,11 +2,7 @@ import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import qs from "qs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSort,
-  faFilter,
-  faMagnifyingGlass,
-} from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "../styles/sidebar.css";
 
 const SideBar = () => {
@@ -58,7 +54,6 @@ const SideBar = () => {
       <div className="sidebar-container">
         <div className="sidebar-filter">
           <div className="sidebar-title">
-            <FontAwesomeIcon className="sidebar-icon" icon={faFilter} />
             <p className="sidebar-text">Filter by city:</p>
           </div>
           <ul className="sidebar-links">
@@ -90,7 +85,6 @@ const SideBar = () => {
         </div>
         <div className="sidebar-sort">
           <div className="sidebar-title">
-            <FontAwesomeIcon className="sidebar-icon" icon={faSort} />
             <p className="sidebar-text">Sort by price:</p>
           </div>
           <ul className="sidebar-links">
