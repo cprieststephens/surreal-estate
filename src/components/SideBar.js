@@ -55,54 +55,60 @@ const SideBar = () => {
           <FontAwesomeIcon icon={faMagnifyingGlass} />
         </button>
       </form>
-      <div className="sidebar-title">
-        <FontAwesomeIcon className="sidebar-icon" icon={faFilter} />
-        <p className="sidebar-text">Filter by city:</p>
+      <div className="sidebar-container">
+        <div className="sidebar-filter">
+          <div className="sidebar-title">
+            <FontAwesomeIcon className="sidebar-icon" icon={faFilter} />
+            <p className="sidebar-text">Filter by city:</p>
+          </div>
+          <ul className="sidebar-links">
+            <Link
+              className="sidebar-links-item"
+              to={buildQueryString("query", { city: "Manchester" })}
+            >
+              Manchester
+            </Link>
+            <Link
+              className="sidebar-links-item"
+              to={buildQueryString("query", { city: "Leeds" })}
+            >
+              Leeds
+            </Link>
+            <Link
+              className="sidebar-links-item"
+              to={buildQueryString("query", { city: "Sheffield" })}
+            >
+              Sheffield
+            </Link>
+            <Link
+              className="sidebar-links-item"
+              to={buildQueryString("query", { city: "Liverpool" })}
+            >
+              Liverpool
+            </Link>
+          </ul>
+        </div>
+        <div className="sidebar-sort">
+          <div className="sidebar-title">
+            <FontAwesomeIcon className="sidebar-icon" icon={faSort} />
+            <p className="sidebar-text">Sort by price:</p>
+          </div>
+          <ul className="sidebar-links">
+            <Link
+              className="sidebar-links-item"
+              to={buildQueryString("sort", { price: 1 })}
+            >
+              Ascending
+            </Link>
+            <Link
+              className="sidebar-links-item"
+              to={buildQueryString("sort", { price: -1 })}
+            >
+              Descending
+            </Link>
+          </ul>
+        </div>
       </div>
-      <ul className="sidebar-links">
-        <Link
-          className="sidebar-links-item"
-          to={buildQueryString("query", { city: "Manchester" })}
-        >
-          Manchester
-        </Link>
-        <Link
-          className="sidebar-links-item"
-          to={buildQueryString("query", { city: "Leeds" })}
-        >
-          Leeds
-        </Link>
-        <Link
-          className="sidebar-links-item"
-          to={buildQueryString("query", { city: "Sheffield" })}
-        >
-          Sheffield
-        </Link>
-        <Link
-          className="sidebar-links-item"
-          to={buildQueryString("query", { city: "Liverpool" })}
-        >
-          Liverpool
-        </Link>
-      </ul>
-      <div className="sidebar-title">
-        <FontAwesomeIcon className="sidebar-icon" icon={faSort} />
-        <p className="sidebar-text">Sort by price:</p>
-      </div>
-      <ul className="sidebar-links">
-        <Link
-          className="sidebar-links-item"
-          to={buildQueryString("sort", { price: 1 })}
-        >
-          Ascending
-        </Link>
-        <Link
-          className="sidebar-links-item"
-          to={buildQueryString("sort", { price: -1 })}
-        >
-          Descending
-        </Link>
-      </ul>
     </div>
   );
 };

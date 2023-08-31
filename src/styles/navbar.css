@@ -21,7 +21,7 @@
 
 .navbar-container {
   display: flex;
-  width: 60%;
+  width: 70%;
 }
 
 .navbar-links {
@@ -108,8 +108,12 @@
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
+  .navbar-title {
+    display: none;
+  }
+  
   .navbar-links {
-    width: 100%;
+    width: 80%;
   }
 }
 
