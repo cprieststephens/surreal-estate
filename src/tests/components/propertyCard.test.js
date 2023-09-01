@@ -34,12 +34,10 @@ describe("PropertyCard", () => {
         />
       </MemoryRouter>
     );
-    const typeAndCityText = getByText(
-      (_, element) => element.textContent === "Stub type - Stub city"
-    );
 
     expect(getByText("Stub title")).toBeInTheDocument();
-    expect(typeAndCityText).toBeInTheDocument();
+    expect(getByText("Stub type")).toBeInTheDocument();
+    expect(getByText("Stub city")).toBeInTheDocument();
     expect(getByText("4")).toBeInTheDocument();
     expect(getByText("2")).toBeInTheDocument();
     expect(getByText("400000")).toBeInTheDocument();
