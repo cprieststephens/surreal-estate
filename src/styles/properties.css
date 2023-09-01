@@ -1,12 +1,9 @@
-.properties {
-  background-color: #ddd;
-}
-
 .properties__cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   margin-left: 13.5rem;
   margin-top: 5rem;
+  min-width: 315px;
 }
 
 .properties__alert {
@@ -15,10 +12,9 @@
 
 @media screen and (max-width:480px) {
   .properties__cards {
-    grid-template-columns: 1fr;
-    width: 100%;
+    grid-template-columns: 1fr 1fr;
     margin: 5rem 0;
-    padding-top: 18.5rem;
+    padding-top: 18.25rem;
   }
 
   .properties__alert {

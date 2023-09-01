@@ -1,15 +1,32 @@
-.saved-properties {
-  background-color: #ddd;
-  height: 100vh;
-}
-
 .saved-properties__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   margin-top: 5rem;
+  min-width: 315px;
 }
 
 .saved-properties__alert {
   margin: 9rem auto;
 }
+
+@media screen and (max-width:480px) {
+  .saved-properties__cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width:481px) and (max-width:767px) {
+  .saved-properties__cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+  .saved-properties__cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 
 
 

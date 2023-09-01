@@ -23,13 +23,13 @@ const SavedCard = ({ _id, propertyListing }) => {
   return (
     <div className="saved-card__container">
       <div className="saved-card">
-        <FontAwesomeIcon icon={faStar} className="saved-card__star" />
-        <div className="saved-card__text-field">
-          <span className="saved-card__bold">{title}</span>
+        <div className="saved-card__icon-container">
+          <FontAwesomeIcon icon={faStar} className="saved-card__star" />
         </div>
         <div className="saved-card__text-field">
-          <span className="saved-card__italic">{type} - </span>
-          <span className="saved-card__italic">{city}</span>
+          <p className="saved-card__text">{title}</p>
+          <p className="saved-card__text">{type}</p>
+          <p className="saved-card__text">{city}</p>
         </div>
         <div className="saved-card__icon-field">
           <FontAwesomeIcon className="saved-card__icon" icon={faBath} />

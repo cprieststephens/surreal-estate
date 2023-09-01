@@ -53,7 +53,6 @@
   padding: 0.3rem;
   margin-top: 0.9rem;
   margin-left: 5%;
-  /* margin: 0.9rem; */
   text-align: center;
   width: 89%;
   font-size: 1rem;
@@ -66,34 +65,5 @@
   cursor: pointer;
 } 
 
-@media screen and (max-width:480px) {
-  .property-card__container {
-    background-color: white;
-    width: 100%;
-    margin: 0.25rem 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .property-card {
-    width: 20rem;
-  }
 
-  .property-card__text-field {
-    margin-left: 2rem;
-  }
-  
-  .property-card__icon-field {
-    padding: 0.3rem 2rem;
-  }
-
-  .property-card__email {
-    width: 15.5rem;
-  }
-
-  .property-card__save {
-    width: 16rem;
-    margin-left: 10%;
-  }
-}
 
