@@ -1,7 +1,7 @@
 .add-property {
   background-color: #fff;
   width: 17rem;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
   margin: 7rem auto;
   border-radius: 0.3rem;
 }
@@ -31,7 +31,7 @@
 
 .add-property__dropdown {
   padding: 0.5rem;
-  width: 7rem;
+  width: 9.5rem;
   position: absolute;
   left: 6.5rem;
   bottom: 0.4rem;
