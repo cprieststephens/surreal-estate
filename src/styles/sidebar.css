@@ -8,7 +8,7 @@
 
 .sidebar-form {
   width: 7rem;
-  margin: 2rem 0 0 1rem;
+  margin: 2rem 0 0 2rem;
   display: flex;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .sidebar-container {
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .sidebar-filter {
@@ -72,10 +72,6 @@
     height: 18rem;
   }
 
-  .sidebar-form {
-    margin: 1rem 2.5rem;
-  }
-
   .sidebar-text, .sidebar-search {
     margin: 0.5rem
   }
@@ -87,7 +83,6 @@
 
   .sidebar-container {
     display: flex;
-    margin-left: 2.5rem;
   }
 
   .sidebar-filter {
@@ -102,6 +97,14 @@
 @media screen and (min-width:481px) and (max-width:991px) {
   .sidebar {
     width: 11rem;
+  }
+
+  .sidebar-form {
+    margin: 2rem 0 0 1rem;
+  }
+
+  .sidebar-container {
+    margin-left: 1rem; 
   }
 }
 

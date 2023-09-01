@@ -1,13 +1,13 @@
 .add-property {
-  padding: 1rem;
-  width: 20rem;
+  background-color: #fff;
+  width: 17rem;
+  padding: 0.5rem;
   margin: 7rem auto;
-  border: 1px solid #17144a;
   border-radius: 0.3rem;
 }
 
 .add-property__form-item {
-  padding: 1rem;
+  padding: 0.75rem;
   position: relative;
 }
 
@@ -22,7 +22,7 @@
 
 .add-property__price {
   padding: 0.5rem;
-  width: 7.8rem;
+  width: 4rem;
   position: absolute;
   left: 6.5rem;
   bottom: 0.4rem;
@@ -31,7 +31,7 @@
 
 .add-property__dropdown {
   padding: 0.5rem;
-  width: 9rem;
+  width: 7rem;
   position: absolute;
   left: 6.5rem;
   bottom: 0.4rem;
@@ -40,7 +40,7 @@
 
 .add-property__free-text {
   padding: 0.5rem;
-  width: 11.2rem;
+  width: 8.2rem;
   position: absolute;
   left: 6.5rem;
   bottom: 0.4rem;
@@ -48,10 +48,10 @@
 }
 
 .add-property__button {
-  width: 18rem;
+  width: 90%;
   padding: 0.5rem;
   border: none;
-  margin: 0.5rem 1rem;
+  margin: 0.25rem 0.75rem;
   border-radius: 0.3rem;
   background-color: #83bcff;
   color: #17144a;
