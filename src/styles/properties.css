@@ -16,35 +16,33 @@
 @media screen and (max-width:480px) {
   .properties__cards {
     grid-template-columns: 1fr;
-    width: 20rem;
-    margin: 5rem auto;
-    padding-top: 19.25rem;
+    width: 100%;
+    margin: 5rem 0;
+    padding-top: 18.5rem;
   }
 
   .properties__alert {
-    margin: 22rem auto;
+    margin: 25rem auto;
   }
 }
 
 @media screen and (min-width:481px) and (max-width:767px) {
-  .properties {
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  
   .properties__cards {
     grid-template-columns: 1fr 1fr;
+    margin-left: 11rem;
   }
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
-  .properties {
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  
   .properties__cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 11rem;
+  }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+  .properties__cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 

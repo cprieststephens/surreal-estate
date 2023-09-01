@@ -1,5 +1,4 @@
 .property-card {
-  width: 15rem;
   min-height: 14.5rem;
   background-color: #fff;
   padding-bottom: 0.7rem;
@@ -17,8 +16,12 @@
 }
 
 .property-card__text-field {
-  height: 1.7rem;
-  margin-left: 1rem;
+  height: 4rem;
+  margin: 0 0 0.5rem 1rem;
+}
+
+.property-card__text {
+  margin: 0.3rem 0;
 }
 
 .property-card__icon-field {
@@ -27,14 +30,6 @@
 
 .property-card__icon {
   width: 1rem;
-}
-
-.property-card__bold {
-  font-weight: bolder;
-}
-
-.property-card__italic {
-  font-style: italic;
 }
 
 .property-card__email {
@@ -56,9 +51,11 @@
   border: none;
   border-radius: 0.3rem;
   padding: 0.3rem;
-  margin: 0.9rem;
+  margin-top: 0.9rem;
+  margin-left: 5%;
+  /* margin: 0.9rem; */
   text-align: center;
-  width: 88%;
+  width: 89%;
   font-size: 1rem;
   font-family: 'Rubik', sans-serif;
 }
@@ -70,9 +67,16 @@
 } 
 
 @media screen and (max-width:480px) {
+  .property-card__container {
+    background-color: white;
+    width: 100%;
+    margin: 0.25rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  
   .property-card {
-    width: 19.5rem;
-    margin-top: 0.5rem;
+    width: 20rem;
   }
 
   .property-card__text-field {
@@ -84,7 +88,12 @@
   }
 
   .property-card__email {
-    width: 80%;
+    width: 15.5rem;
+  }
+
+  .property-card__save {
+    width: 16rem;
+    margin-left: 10%;
   }
 }
 

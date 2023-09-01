@@ -34,11 +34,9 @@ const propertyCard = ({
           />
         </div>
         <div className="property-card__text-field">
-          <span className="property-card__bold">{title}</span>
-        </div>
-        <div className="property-card__text-field">
-          <span className="property-card__italic">{type} - </span>
-          <span className="property-card__italic">{city}</span>
+          <p className="property-card__text">{title}</p>
+          <p className="property-card__text">{type}</p>
+          <p className="property-card__text">{city}</p>
         </div>
         <div className="property-card__icon-field">
           <FontAwesomeIcon className="property-card__icon" icon={faBath} />

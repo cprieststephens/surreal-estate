@@ -73,7 +73,7 @@
   left: 45rem;
 }
 
-@media screen and (min-width:480px) {
+@media screen and (min-width:767px) {
   .navbar-icon {
     display: none;
   }
@@ -85,7 +85,7 @@
   }
 
   .navbar-container {
-    margin-left: 5%;
+    margin-left: 3%;
   }
 
   .navbar-links {
@@ -99,6 +99,10 @@
 
 @media screen and (min-width:481px) and (max-width:767px) {
   .navbar-title {
+    display: none;
+  }
+
+  .navbar-text {
     display: none;
   }
 

@@ -53,9 +53,7 @@ const SideBar = () => {
       </form>
       <div className="sidebar-container">
         <div className="sidebar-filter">
-          <div className="sidebar-title">
-            <p className="sidebar-text">Filter by city:</p>
-          </div>
+          <p className="sidebar-text">Filter by city:</p>
           <ul className="sidebar-links">
             <Link
               className="sidebar-links-item"
@@ -84,9 +82,7 @@ const SideBar = () => {
           </ul>
         </div>
         <div className="sidebar-sort">
-          <div className="sidebar-title">
-            <p className="sidebar-text">Sort by price:</p>
-          </div>
+          <p className="sidebar-text">Sort by price:</p>
           <ul className="sidebar-links">
             <Link
               className="sidebar-links-item"
