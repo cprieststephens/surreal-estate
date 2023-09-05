@@ -17,6 +17,27 @@ describe("PropertyCard", () => {
     onSaveProperty: jest.fn(),
   };
 
+  it("renders correctly", () => {
+    const { asFragment } = render(
+      <MemoryRouter>
+        <PropertyCard
+          title={validProps.title}
+          type={validProps.type}
+          bedrooms={validProps.bedrooms}
+          bathrooms={validProps.bathrooms}
+          price={validProps.price}
+          city={validProps.city}
+          email={validProps.email}
+          _id={validProps._id}
+          userID={validProps.userID}
+          onSaveProperty={validProps.onSaveProperty}
+        />
+      </MemoryRouter>
+    );
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   it("renders the correct value for props", () => {
     const { getByText } = render(
       <MemoryRouter>
