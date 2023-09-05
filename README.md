@@ -2,7 +2,7 @@
 
 <img src="src/img/surreal-estate-screenshot.jpg" alt="surreal estate landing page screenshot" title="Surreal Estate" width="600px"><br>
 
-- I'm currently building the app using React, JavaScript and CSS.  
+- I'm currently building this app using React, JavaScript and CSS.  
 - I'm writing the tests using Jest and React Testing Library.
 - This project was created using the npx script `create-react-app`.
 

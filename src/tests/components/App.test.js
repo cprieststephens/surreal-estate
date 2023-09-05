@@ -10,6 +10,7 @@ describe("App", () => {
         <App />
       </MemoryRouter>
     );
+
     expect(asFragment()).toMatchSnapshot();
   });
 });
