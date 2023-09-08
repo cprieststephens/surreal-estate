@@ -4,14 +4,12 @@ import { render, screen } from "@testing-library/react";
 import SignIn from "../../components/SignIn";
 
 describe("SignIn", () => {
-  const validProps = {
-    setUserID: jest.fn(),
-  };
+  const setUserID = jest.fn();
 
   it("renders correctly", () => {
     const { asFragment } = render(
       <MemoryRouter>
-        <SignIn setUserID={validProps.setUserID} />
+        <SignIn setUserID={setUserID} />
       </MemoryRouter>
     );
 
@@ -21,7 +19,7 @@ describe("SignIn", () => {
   it("renders an email input", () => {
     render(
       <MemoryRouter>
-        <SignIn setUserID={validProps.setUserID} />
+        <SignIn setUserID={setUserID} />
       </MemoryRouter>
     );
     const emailInput = screen.getByPlaceholderText("Enter email");
@@ -32,7 +30,7 @@ describe("SignIn", () => {
   it("renders a password input", () => {
     render(
       <MemoryRouter>
-        <SignIn setUserID={validProps.setUserID} />
+        <SignIn setUserID={setUserID} />
       </MemoryRouter>
     );
     const passwordInput = screen.getByPlaceholderText("Enter password");
@@ -43,7 +41,7 @@ describe("SignIn", () => {
   it("renders a submit button", () => {
     render(
       <MemoryRouter>
-        <SignIn setUserID={validProps.setUserID} />
+        <SignIn setUserID={setUserID} />
       </MemoryRouter>
     );
     const submitButton = screen.getByRole("button");
