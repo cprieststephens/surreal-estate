@@ -1,5 +1,5 @@
 import React from "react";
-import { MemoryRouter } from "react-router-dom"
+import { MemoryRouter } from "react-router-dom";
 import { render, screen } from "@testing-library/react";
 import Navbar from "../../components/Navbar";
 
@@ -41,7 +41,7 @@ describe("Navbar", () => {
     expect(surrealEstate).toBeInTheDocument();
   });
 
-  it("renders a button", () => {
+  it("renders a sign out button", () => {
     render(
       <MemoryRouter>
         <Navbar setUserID={validProps.setUserID} userID={validProps.userID} />
