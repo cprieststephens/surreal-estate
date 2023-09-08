@@ -39,6 +39,7 @@ const SignUp = () => {
           <label htmlFor="sign-up__email">
             Email:
             <input
+              placeholder="Enter email"
               className="sign-up__input"
               type="email"
               id="sign-up__email"
@@ -52,6 +53,7 @@ const SignUp = () => {
           <label htmlFor="sign-up__password">
             Password:
             <input
+              placeholder="Enter password"
               className="sign-up__input"
               type="password"
               id="sign-up__password"
