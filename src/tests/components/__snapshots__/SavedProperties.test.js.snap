@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SavedProperties renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="saved-properties"
+  >
+    <div
+      class="saved-properties__cards"
+    />
+    <div
+      class="properties__alert"
+    />
+  </div>
+</DocumentFragment>
+`;
