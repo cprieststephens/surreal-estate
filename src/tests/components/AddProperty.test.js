@@ -11,27 +11,19 @@ describe("AddProperty", () => {
 
   it("renders the correct inputs", () => {
     render(<AddProperty />);
-    const title = screen.getByLabelText(/title/i);
-    const type = screen.getByLabelText(/type/i);
-    const bedrooms = screen.getByLabelText(/bedrooms/i);
-    const bathrooms = screen.getByLabelText(/bathrooms/i);
-    const price = screen.getByLabelText(/price/i);
-    const city = screen.getByLabelText(/city/i);
-    const email = screen.getByLabelText(/email/i);
 
-    expect(title).toBeInTheDocument();
-    expect(type).toBeInTheDocument();
-    expect(bedrooms).toBeInTheDocument();
-    expect(bathrooms).toBeInTheDocument();
-    expect(price).toBeInTheDocument();
-    expect(city).toBeInTheDocument();
-    expect(email).toBeInTheDocument();
+    expect(screen.getByLabelText(/title/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/type/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/bedrooms/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/bathrooms/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/price/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/city/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/email/i)).toBeInTheDocument();
   });
 
   it("renders a submit button", () => {
     render(<AddProperty />);
-    const submitButton = screen.getByRole("button");
 
-    expect(submitButton).toBeInTheDocument();
+    expect(screen.getByRole("button")).toBeInTheDocument();
   });
 });
