@@ -25,9 +25,8 @@ describe("Navbar", () => {
         <Navbar setUserID={validProps.setUserID} userID={validProps.userID} />
       </MemoryRouter>
     );
-    const logo = screen.getByAltText("Surreal Estate logo");
 
-    expect(logo).toBeInTheDocument();
+    expect(screen.getByAltText("Surreal Estate logo")).toBeInTheDocument();
   });
 
   it("renders the correct title", () => {
@@ -36,9 +35,8 @@ describe("Navbar", () => {
         <Navbar setUserID={validProps.setUserID} userID={validProps.userID} />
       </MemoryRouter>
     );
-    const surrealEstate = screen.getByText(/surreal estate/i);
 
-    expect(surrealEstate).toBeInTheDocument();
+    expect(screen.getByText(/surreal estate/i)).toBeInTheDocument();
   });
 
   it("renders a sign out button", () => {
@@ -47,8 +45,7 @@ describe("Navbar", () => {
         <Navbar setUserID={validProps.setUserID} userID={validProps.userID} />
       </MemoryRouter>
     );
-    const signOutButton = screen.getByRole("button");
 
-    expect(signOutButton).toBeInTheDocument();
+    expect(screen.getByRole("button")).toBeInTheDocument();
   });
 });

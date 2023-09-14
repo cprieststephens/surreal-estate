@@ -1,17 +1,17 @@
 import React from "react";
 import { MemoryRouter } from "react-router-dom";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import PropertyCard from "../../components/PropertyCard";
 
 describe("PropertyCard", () => {
   const validProps = {
-    title: "Stub title",
-    type: "Stub type",
-    bedrooms: 4,
-    bathrooms: 2,
-    price: 400000,
-    city: "Stub city",
-    email: "Stub email",
+    title: "stub-title",
+    type: "stub-type",
+    bedrooms: "stub-bedrooms",
+    bathrooms: "stub-bathrooms",
+    price: "stub-price",
+    city: "stub-city",
+    email: "stub-email",
     _id: "111",
     userID: "222",
     onSaveProperty: jest.fn(),
@@ -39,7 +39,7 @@ describe("PropertyCard", () => {
   });
 
   it("renders the correct value for props", () => {
-    const { getByText } = render(
+    render(
       <MemoryRouter>
         <PropertyCard
           title={validProps.title}
@@ -56,16 +56,16 @@ describe("PropertyCard", () => {
       </MemoryRouter>
     );
 
-    expect(getByText("Stub title")).toBeInTheDocument();
-    expect(getByText("Stub type")).toBeInTheDocument();
-    expect(getByText("Stub city")).toBeInTheDocument();
-    expect(getByText("4")).toBeInTheDocument();
-    expect(getByText("2")).toBeInTheDocument();
-    expect(getByText("400000")).toBeInTheDocument();
+    expect(screen.getByText("stub-title")).toBeInTheDocument();
+    expect(screen.getByText("stub-type")).toBeInTheDocument();
+    expect(screen.getByText("stub-city")).toBeInTheDocument();
+    expect(screen.getByText("stub-bedrooms")).toBeInTheDocument();
+    expect(screen.getByText("stub-bathrooms")).toBeInTheDocument();
+    expect(screen.getByText("stub-price")).toBeInTheDocument();
   });
 
   it("renders email link text", () => {
-    const { getByText } = render(
+    render(
       <MemoryRouter>
         <PropertyCard
           title={validProps.title}
@@ -82,11 +82,11 @@ describe("PropertyCard", () => {
       </MemoryRouter>
     );
 
-    expect(getByText("Email")).toBeInTheDocument();
+    expect(screen.getByText(/email/i)).toBeInTheDocument();
   });
 
   it("renders a save button", () => {
-    const { getByRole } = render(
+    render(
       <MemoryRouter>
         <PropertyCard
           title={validProps.title}
@@ -103,6 +103,6 @@ describe("PropertyCard", () => {
       </MemoryRouter>
     );
 
-    expect(getByRole("button")).toBeInTheDocument();
+    expect(screen.getByRole("button")).toBeInTheDocument();
   });
 });

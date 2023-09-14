@@ -22,9 +22,8 @@ describe("SignIn", () => {
         <SignIn setUserID={setUserID} />
       </MemoryRouter>
     );
-    const emailInput = screen.getByPlaceholderText("Enter email");
 
-    expect(emailInput).toBeInTheDocument();
+    expect(screen.getByPlaceholderText("Enter email")).toBeInTheDocument();
   });
 
   it("renders a password input", () => {
@@ -33,9 +32,8 @@ describe("SignIn", () => {
         <SignIn setUserID={setUserID} />
       </MemoryRouter>
     );
-    const passwordInput = screen.getByPlaceholderText("Enter password");
 
-    expect(passwordInput).toBeInTheDocument();
+    expect(screen.getByPlaceholderText("Enter password")).toBeInTheDocument();
   });
 
   it("renders a submit button", () => {
@@ -44,8 +42,7 @@ describe("SignIn", () => {
         <SignIn setUserID={setUserID} />
       </MemoryRouter>
     );
-    const submitButton = screen.getByRole("button");
 
-    expect(submitButton).toBeInTheDocument();
+    expect(screen.getByRole("button")).toBeInTheDocument();
   });
 });

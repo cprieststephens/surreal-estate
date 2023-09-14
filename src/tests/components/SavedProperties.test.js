@@ -18,9 +18,7 @@ describe("SavedProperties", () => {
             price: "stub-price",
             city: "stub-city",
             email: "stub-email",
-            __v: "stub-value",
           },
-          __v: "stub-value",
         },
       ],
     };

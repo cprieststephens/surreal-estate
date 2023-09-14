@@ -20,9 +20,8 @@ describe("SideBar", () => {
         <SideBar />
       </MemoryRouter>
     );
-    const searchInput = screen.getByPlaceholderText(/flat/i);
 
-    expect(searchInput).toBeInTheDocument();
+    expect(screen.getByPlaceholderText(/flat/i)).toBeInTheDocument();
   });
 
   it("renders a search button", () => {
@@ -31,9 +30,8 @@ describe("SideBar", () => {
         <SideBar />
       </MemoryRouter>
     );
-    const searchButton = screen.getByRole("button");
 
-    expect(searchButton).toBeInTheDocument();
+    expect(screen.getByRole("button")).toBeInTheDocument();
   });
 
   it("renders the correct text", () => {
@@ -42,10 +40,8 @@ describe("SideBar", () => {
         <SideBar />
       </MemoryRouter>
     );
-    const filterText = screen.getByText(/filter by city/i);
-    const sortText = screen.getByText(/sort by price/i);
 
-    expect(filterText).toBeInTheDocument();
-    expect(sortText).toBeInTheDocument();
+    expect(screen.getByText(/filter by city/i)).toBeInTheDocument();
+    expect(screen.getByText(/sort by price/i)).toBeInTheDocument();
   });
 });

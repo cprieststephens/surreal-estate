@@ -23,17 +23,17 @@ exports[`PropertyCard renders correctly 1`] = `
         <p
           class="property-card__text"
         >
-          Stub title
+          stub-title
         </p>
         <p
           class="property-card__text"
         >
-          Stub type
+          stub-type
         </p>
         <p
           class="property-card__text"
         >
-          Stub city
+          stub-city
         </p>
       </div>
       <div
@@ -55,7 +55,7 @@ exports[`PropertyCard renders correctly 1`] = `
           />
         </svg>
         <span>
-           2
+           stub-bathrooms
         </span>
       </div>
       <div
@@ -77,7 +77,7 @@ exports[`PropertyCard renders correctly 1`] = `
           />
         </svg>
         <span>
-           4
+           stub-bedrooms
         </span>
       </div>
       <div
@@ -99,7 +99,7 @@ exports[`PropertyCard renders correctly 1`] = `
           />
         </svg>
         <span>
-           400000
+           stub-price
         </span>
       </div>
       <div
@@ -107,7 +107,7 @@ exports[`PropertyCard renders correctly 1`] = `
       >
         <a
           class="property-card__link"
-          href="mailto:Stub email"
+          href="mailto:stub-email"
         >
           <svg
             aria-hidden="true"
